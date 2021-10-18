@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Pham Portfolio Website</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/devkevin.PNG" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">What I'm Up To</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello! I am <strong>Kevin Pham</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Software Engineer</p>
+        <img src="img/kevin-01.PNG" alt="a picture of ---" class="intro__img">
+    </section>
+
+    <!-- Service Section -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What's Happening?</h2>
+
+        <div class="services">
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>In the front end, I have done projects using Angular framework and am currently picking up the React library. In the back end, 
+                    my experience lies with using Spring Boot along with MySQL database. An example project is the EmployeeManager that allows users
+                    to perform CRUD and searching operations on employee information.
+                </p>
+            </div>
+            <div class="service">
+                <h3>Android Mobile Apps</h3>
+                <p>Using Android Studio and written in Java, I have worked on small Android mobile applications to practice mobile application development. 
+                    One highlight project is a WhatsApp clone that allows emulated and physical devices to send text messages in real time. 
+                    The app utilizes Firebase as a cloud database to store and retrieve user data and messages.
+                </p>
+            </div>
+            <div class="service">
+                <h3>AI & Machine Learning</h3>
+                <p>After having taken an Introduction to Artificial Intelligence course, I have been more and more intrested in AI and machine learning. 
+                    At the moment, I am taking online courses to learn python programming fundamentals. I plan to dive deeper in the realm of artifical Intelligence,
+                    machine learning, and data science.
+                    
+                </p>
+            </div>
+        </div>
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me Section-->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Software Engineer</p>
+
+        <div class="about-me__body">
+            <p>Being born in the Silicon Valley, and growing up hearing people talk about how the area is dominated by the tech field, 
+                I naturally wanted to become an engineer of some sort. But before we get to that, while I was in school I worked as an Operations Supervisor
+                at California's Great America where I learned soft skills such as communication, teamwork, leadership, and business management. With that being said,
+                now that I have a Bachelor's Degree in Software Engineering, I want to shift my focus on what I've dedicated my time studying towards. In university,
+                I was taught the fundamentals but now I'm eager to gain real-world experiences. I am looking for opportunities where I can gain hands on experience while 
+                meeting new people and learning from my peers.
+
+            </p>
+        </div>
+
+        <img src="img/kevin_simba.PNG" alt="image of me and my cat" class="about-me__img">
+    </section>
+
+    <!-- My Work/Projects -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section_subtitle section__subtitle--work">A selection of my works</p>
+
+        <div class="portfolio">
+            <!-- Portfolio Item #1 - Flash Chat -->
+            <a href="portfolio-item-flash_chat.html" class="portfolio__item">
+                <img src="img/flash_chat/flash_chat_icon.png" alt="logo icon for Flash Chat" class="portfolio__img">
+            </a>
+            <!-- Portfolio Item #2  - Employee Manager -->
+            <a href="portfolio-item-employee_manager.html" class="portfolio__item">
+                <img src="img/employee_manager/employee_manager_logo.PNG" alt="logo icon for Employee Manager " class="portfolio__img">
+            </a>
+            <!-- Portfolio Item #3 - luv2Shop -->
+            <a href="portfolio-item-luv2shop_ecommerce.html" class="portfolio__item">
+                <img src="img/luv2shop/luv2shop_logo.PNG" alt="" class="portfolio__img fill">
+            </a>
+            <!-- Portfolio Item #4 - crwn-clothing -->
+            <a href="portfolio-item-crwn_clothing.html" class="portfolio__item">
+                <img src="img/crwn_clothing/crwn_logo.png" alt="" class="portfolio__img">
+            </a>
+            <!-- Portfolio Item #5 -->
+            <a href="portfolio-item-100_days_python.html" class="portfolio__item">
+                <img src="img/100_days_python/python_logo.PNG" alt="" class="portfolio__img">
+            </a>
+            <!-- Portfolio Item #6 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Email Address -->
+        <a href="mailto:phamtkevin@gmail.com" class="footer__link">phamtkevin@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/phamkevinT">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/kevintpham/">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/phamtkevin/">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
